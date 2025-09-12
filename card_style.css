@@ -27,6 +27,21 @@ body{
 }
 
 .home{
-    text-align: center;
-    color: #000000;
+    text-align-last: justify;
+    width: 97%;
+    padding-left: 20px;
+    padding-right: 20px;
+    
 }
+
+.HOME:link , .HOME:visited{
+    color:#000000;
+    text-decoration:none;
+}
+
+.back:link , .back:visited , .progress:link , .progress:visited{
+    color:#ff0000;
+    text-decoration:none;
+    font-size:30px;
+}
+
