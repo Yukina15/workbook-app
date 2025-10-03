@@ -13,10 +13,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="card">
-        <h3 class="En">apple</h3>
-        <p class="Ja"> りんご</p>
+
+    <div class="card-container" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+            <div class="front">表 : Apple</div>
+            <div class="front">裏 : りんご</div>
+        </div>
     </div>
+
+    <!-- <div class="card-container" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+            <h3 class="En">apple</h3>
+            <p class="Ja"> りんご</p>
+        </div>
+    </div> -->
+    
     
     <div class="home">
         <a class="back" href=""><<<</a>
@@ -24,12 +35,7 @@
         <a class="progress" href="">>>></a>
     </div>
 
-    <div class="card-container" onclick="this.classList.toggle('flipped')">
-        <div class="card">
-            <div class="front">表：Apple</div>
-            <div class="front">裏：りんご</div>
-        </div>
-    </div>
+    
 
 </body>
 </html>
