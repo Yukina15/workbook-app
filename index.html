@@ -9,18 +9,28 @@
     <link rel="manifest" href="manifest.json"/>
 </head>
 <body>
-    <h1>単語帳アプリ ver 0.0004</h1>
+    <h1 class="text">📘単語帳アプリ</h1>
 
-    <div>
-        <a href="card.html">単語カード</a>
+    <div class="set-word">
+        <h2 class="text">単語登録</h2>
+        <input type="text" id="english" placeholder="英単語（例：apple）"/><br>
+        <input type="text" id="japanese" placeholder="日本語訳（例：りんご）"/><br>
+        <button onclick="addWord()">登録</button>
+        <p id="result">aaa</p>
     </div>
 
-    <input type="text" id="english" placeholder="英単語（例：apple）"/>
-    <input type="text" id="japanese" placeholder="日本語訳（例：りんご）"/>
-    <button onclick="addWord()">追加</button>
-
+    <div class="learn-word">
+        <h2 class="text">単語学習</h2>
+            <p id="wordnum">登録単語数　：　＊＊＊＊</p>
+            <p id="learn-word">学習回数　　：　＊＊＊＊</p>
+        <div class="tocard">
+            <a href="card.html">単語カード</a>
+        </div>
+    </div>
+    
     <ul id="wordList"></ul>
-
     <script src="app.js"></script>
+    <small>ver0.0005</small>
+
 </body>
 </html>
