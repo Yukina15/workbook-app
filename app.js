@@ -26,7 +26,7 @@ function addWord() {
     wordnum = wordnum + 1;
 
     flashcards.push(newCard);
-    // saveWords();
+    saveWords();
 
     // flashcards = JSON.parse(localStorage.getItem('flashcards'));
 
