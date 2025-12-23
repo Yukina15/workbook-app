@@ -60,6 +60,6 @@ window.onload = function() {
 function cleardeta() {
 
     localStorage.setItem('flashcards',JSON.stringify([]));
-    wordnum = 1;
+    wordnum.getElementById('wordnum').innerText = 1;
 
 }
