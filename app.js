@@ -60,6 +60,7 @@ window.onload = function() {
 function cleardeta() {
 
     localStorage.setItem('flashcards',JSON.stringify([]));
-    wordnum.getElementById('wordnum').innerText = 1;
+    wordnum = 1;
+    document.getElementById('wordnum').innerText = '登録単語数　：　' + wordnum;
 
 }
