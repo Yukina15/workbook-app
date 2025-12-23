@@ -49,8 +49,8 @@ function saveWords() {
 }
 
 window.onload = function() {
-    flashcards = JSON.parse(localStorage.getItem('flashcards'));
-    wordnum = JSON.parse(localStorage.getItem('wordnum'));
+    flashcards = JSON.parse(localStorage.getItem('flashcards'))||[];
+    wordnum = JSON.parse(localStorage.getItem('wordnum'))||[];
 
     document.getElementById('wordnum').innerText = '登録単語数　：　' + wordnum;
 };
